@@ -17,10 +17,10 @@ const Login = () => {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-dark-200">
+    <div className="bg-dark-200 flex min-h-screen items-center justify-center">
       <form
         onSubmit={handleSubmit}
-        className="w-96 space-y-6 rounded-lg bg-dark-300 p-8"
+        className="bg-dark-300 w-96 space-y-6 rounded-lg p-8"
       >
         <h2 className="text-center text-2xl font-bold text-white">Admin Login</h2>
         <input
@@ -29,7 +29,7 @@ const Login = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full rounded bg-dark-100 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="bg-dark-100 w-full rounded px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="password"
@@ -37,7 +37,7 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="w-full rounded bg-dark-100 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="bg-dark-100 w-full rounded px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <Button type="submit" className="w-full">
           Login
