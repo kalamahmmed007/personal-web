@@ -19,10 +19,23 @@ export const skills = {
       link: "https://www.typescriptlang.org"
     },
     {
-      name: "Next.js",
+      name: "context API",
       level: 75,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      link: "https://nextjs.org"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      link: "https://react.dev/learn/passing-data-deeply-with-context"
+    },
+    {
+      name: "CSS3",
+      level: 70,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+
+    {
+      name: "Bootstrap",
+      level: 80,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      link: "https://getbootstrap.com"
     },
     {
       name: "Redux Toolkit",
@@ -48,12 +61,8 @@ export const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
-    {
-      name: "CSS3",
-      level: 90,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    }
+    
+    
   ],
 
   backend: [
@@ -81,18 +90,7 @@ export const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       link: "https://mongoosejs.com"
     },
-    {
-      name: "PostgreSQL",
-      level: 70,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-      link: "https://postgresql.org"
-    },
-    {
-      name: "Prisma",
-      level: 65,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
-      link: "https://www.prisma.io"
-    },
+   
     {
       name: "REST API",
       level: 90,
@@ -105,12 +103,7 @@ export const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
       link: "https://jwt.io"
     },
-    {
-      name: "GraphQL",
-      level: 65,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-      link: "https://graphql.org"
-    }
+    
   ],
 
   tools: [
@@ -132,12 +125,7 @@ export const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
       link: "https://docker.com"
     },
-    {
-      name: "AWS",
-      level: 65,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
-      link: "https://aws.amazon.com"
-    },
+    
     {
       name: "Firebase",
       level: 75,
@@ -161,6 +149,12 @@ export const skills = {
       level: 90,
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
       link: "https://postman.com"
+    },
+    {
+      name: "Axios",
+      level: 80,
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-original.svg",
+      link: "https://axios-http.com"
     }
   ],
 
