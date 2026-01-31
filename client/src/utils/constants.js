@@ -8,7 +8,6 @@ export const NAV_LINKS = [
     { name: "Projects", path: "#projects" },
     { name: "Experience", path: "#experience" },
     { name: "Contact", path: "#contact" },
-    { name: "Services", path: "/services", external: false },
 ]
 
 export const ANIMATION_DURATION = {

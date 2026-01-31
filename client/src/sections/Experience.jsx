@@ -4,38 +4,40 @@ import SectionTitle from '../components/ui/SectionTitle'
 const Experience = () => {
     const experiences = [
         {
-            type: 'work',
-            title: 'Senior Frontend Developer',
-            company: 'Tech Company Inc.',
-            period: '2022 - Present',
-            description: 'Leading frontend development team, architecting scalable React applications, and implementing modern UI/UX practices.'
-        },
-        {
-            type: 'work',
-            title: 'Full Stack Developer',
-            company: 'Digital Agency',
-            period: '2020 - 2022',
-            description: 'Developed full-stack web applications using React, Node.js, and MongoDB. Collaborated with designers and clients to deliver high-quality products.'
+            type: 'education',
+            title: 'B.A. (Honours) in Bangla',
+            company: 'Dhaka Central University',
+            period: '2023 - Present',
+            description: 'Currently pursuing Bachelor’s degree in Bangla. Actively developing technical skills alongside academic studies. Focused on software engineering, algorithms, and web technologies.'
         },
         {
             type: 'education',
-            title: 'Bachelor of Computer Science',
-            company: 'University Name',
-            period: '2016 - 2020',
-            description: 'Graduated with honors. Focused on software engineering, algorithms, and web technologies.'
+            title: 'Full Stack Web Developer',
+            company: 'Interactive Cares',
+            period: '2024 - 2025',
+            description: 'Completed an intensive MERN stack program covering React, Node.js, Express, MongoDB, authentication, and real-world project development.'
         },
         {
             type: 'work',
-            title: 'Junior Developer',
-            company: 'Startup Co.',
-            period: '2019 - 2020',
-            description: 'Built responsive websites and learned modern development practices. Contributed to multiple client projects.'
+            title: 'Freelance Full Stack Developer',
+            company: 'Fiverr',
+            period: '2023 - Present',
+            description: 'Working with international clients on MERN stack projects, building responsive UIs, REST APIs, admin dashboards, and full-featured web applications.'
+        },
+        
+        
+        {
+            type: 'work',
+            title: 'Software Development Intern (Expected)',
+            company: 'Open to Opportunities',
+            period: 'waiting',
+            description: 'Actively seeking internship opportunities to gain hands-on industry experience and contribute to real-world software development teams.'
         }
     ]
 
     return (
-        <section id="experience" className="py-20 bg-dark-300">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="experience" className="bg-dark-300 py-20">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <SectionTitle
                     title="Experience & Education"
                     subtitle="My professional journey and educational background"
@@ -43,7 +45,7 @@ const Experience = () => {
 
                 <div className="relative">
                     {/* Timeline Line */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-500 to-purple-500 hidden md:block"></div>
+                    <div className="absolute left-1/2 hidden h-full w-0.5 -translate-x-1/2 transform bg-gradient-to-b from-blue-500 to-purple-500 md:block"></div>
 
                     <div className="space-y-12">
                         {experiences.map((exp, index) => (
@@ -53,13 +55,13 @@ const Experience = () => {
                                     } flex-col`}
                             >
                                 {/* Timeline Dot */}
-                                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-dark-300 z-10 hidden md:block"></div>
+                                <div className="absolute left-1/2 z-10 hidden h-4 w-4 -translate-x-1/2 transform rounded-full border-4 border-dark-300 bg-blue-500 md:block"></div>
 
                                 {/* Content Card */}
                                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:pl-12'}`}>
-                                    <div className="bg-dark-100 rounded-xl p-6 border border-gray-800 hover:border-blue-500/50 transition-all duration-300 group hover:-translate-y-1">
+                                    <div className="group rounded-xl border border-gray-800 bg-dark-100 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/50">
                                         <div className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}>
-                                            <div className="p-2 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors">
+                                            <div className="rounded-lg bg-blue-500/10 p-2 transition-colors group-hover:bg-blue-500/20">
                                                 {exp.type === 'work' ? (
                                                     <Briefcase size={20} className="text-blue-500" />
                                                 ) : (
@@ -69,13 +71,13 @@ const Experience = () => {
                                             <span className="text-sm text-gray-400">{exp.period}</span>
                                         </div>
 
-                                        <h3 className="text-xl font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">
+                                        <h3 className="mb-1 text-xl font-bold text-white transition-colors group-hover:text-blue-400">
                                             {exp.title}
                                         </h3>
 
-                                        <p className="text-blue-500 font-medium mb-3">{exp.company}</p>
+                                        <p className="mb-3 font-medium text-blue-500">{exp.company}</p>
 
-                                        <p className="text-gray-400 text-sm">{exp.description}</p>
+                                        <p className="text-sm text-gray-400">{exp.description}</p>
                                     </div>
                                 </div>
 

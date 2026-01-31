@@ -119,12 +119,7 @@ export const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       link: "https://github.com"
     },
-    {
-      name: "Docker",
-      level: 70,
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      link: "https://docker.com"
-    },
+    
     
     {
       name: "Firebase",
